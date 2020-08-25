@@ -1,0 +1,3 @@
+#!/bin/sh
+
+node /gitlab-add-mr-note/dist/index.js "$@"

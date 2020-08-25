@@ -1,0 +1,6 @@
+version: '3'
+services:
+  gitlab-add-mr-note:
+    image: thunderz99/gitlab-add-mr-note
+    container_name: gitlab-add-mr-note
+    build: .
