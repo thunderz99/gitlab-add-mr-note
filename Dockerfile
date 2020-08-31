@@ -1,5 +1,8 @@
 FROM whatwedo/yarn:v2.2
 
+# for urlencode / urldecode
+RUN apk add python3
+
 COPY . /gitlab-add-mr-note
 
 WORKDIR /gitlab-add-mr-note
