@@ -1,38 +1,59 @@
 {
-  "name": "other-pjt-dependencies",
-  "version": "0.1.0",
-  "description": "A dummy pjt to generate yarn cache",
-     "dependencies": {
+    "name": "smartcompany-front",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
         "@ant-design/icons": "^4.2.1",
-        "@ant-design/pro-layout": "^6.4.4",
-        "@ant-design/pro-table": "^2.6.3",
+        "@ant-design/pro-layout": "^6.9.2",
+        "@ant-design/pro-list": "^1.2.18",
+        "@ant-design/pro-table": "^2.17.0",
+        "@jedmao/location": "^3.0.0",
         "@types/classnames": "^2.2.10",
+        "@types/dragula": "^3.7.0",
+        "@types/luxon": "^1.25.1",
         "@types/react-beautiful-dnd": "^13.0.0",
+        "@types/react-google-recaptcha": "^2.1.0",
+        "@types/react-grid-layout": "^1.1.1",
         "@types/react-sortable-tree": "^0.3.12",
         "@types/zxcvbn": "^4.4.0",
-        "antd": "^4.6.6",
+        "antd": "^4.12.3",
         "antd-dayjs-webpack-plugin": "^1.0.1",
-        "axios": "^0.19.2",
+        "antd-img-crop": "^3.13.1",
+        "axios": "^0.21.1",
         "babel-polyfill": "^6.26.0",
         "browser": "^0.2.6",
+        "copy-to-clipboard": "^3.3.1",
         "core-js": "^3.6.5",
         "cross-env": "^7.0.2",
         "dayjs": "^1.8.36",
+        "dragula": "^3.7.3",
+        "echarts": "^5.0.2",
+        "echarts-for-react": "^3.0.1",
         "good-storage": "^1.1.1",
+        "html2canvas": "^1.0.0-rc.7",
         "i18next": "^19.7.0",
+        "immutability-helper": "^3.1.1",
+        "jest-canvas-mock": "^2.3.0",
         "js-cookie": "^2.2.1",
+        "jspdf": "^2.2.0",
+        "luxon": "^1.25.0",
         "msal": "^1.3.3",
         "query-string": "^6.13.1",
         "react": "^16.13.1",
         "react-app-polyfill": "^1.0.6",
         "react-beautiful-dnd": "^13.0.0",
+        "react-dnd": "^11.1.3",
+        "react-dnd-html5-backend": "^11.1.3",
         "react-dom": "^16.13.1",
+        "react-error-boundary": "^3.1.1",
+        "react-google-recaptcha": "^2.1.0",
+        "react-grid-layout": "^1.2.0",
         "react-i18next": "^11.7.1",
         "react-intersection-observer": "^8.29.0",
         "react-microsoft-login": "^1.10.1",
-        "react-query": "^2.5.13",
         "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.1",
+        "react-select": "^3.1.0",
         "react-sortable-tree": "^2.8.0",
         "react-use": "^15.3.3",
         "zxcvbn": "^4.4.2"
@@ -40,13 +61,16 @@
     "devDependencies": {
         "@commitlint/cli": "^9.1.1",
         "@commitlint/config-conventional": "^9.1.1",
-        "@storybook/addon-actions": "^5.3.19",
-        "@storybook/addon-links": "^5.3.19",
-        "@storybook/addons": "^5.3.19",
-        "@storybook/cli": "^5.3.19",
+        "@storybook/addon-actions": "^6.1.10",
+        "@storybook/addon-knobs": "^6.1.10",
+        "@storybook/addon-links": "^6.1.10",
+        "@storybook/addon-notes": "^5.3.21",
+        "@storybook/addon-storysource": "^6.1.10",
+        "@storybook/addons": "^6.1.10",
+        "@storybook/cli": "^6.1.10",
         "@storybook/preset-ant-design": "^0.0.1",
-        "@storybook/preset-create-react-app": "^3.1.4",
-        "@storybook/react": "^5.3.19",
+        "@storybook/preset-create-react-app": "^3.1.5",
+        "@storybook/react": "^6.1.10",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^10.4.8",
         "@testing-library/user-event": "^7.1.2",
@@ -56,29 +80,91 @@
         "@types/react": "^16.9.0",
         "@types/react-dom": "^16.9.0",
         "@types/react-router-dom": "^5.1.5",
+        "@types/react-select": "^3.0.22",
         "antd-theme-webpack-plugin": "^1.3.6",
-        "axios-mock-adapter": "^1.18.2",
+        "axios-mock-adapter": "^1.19.0",
         "child_process": "^1.0.2",
         "chromatic": "^5.1.0",
         "customize-cra": "^1.0.0",
         "dotenv": "^8.2.0",
         "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-i18n": "^2.0.0",
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react-hooks": "^4.0.8",
+        "fsevents": "^2.1.3",
         "husky": "^4.2.5",
         "identity-obj-proxy": "^3.0.0",
+        "jest-canvas-mock": "^2.3.0",
         "jest-environment-jsdom-sixteen": "^1.0.3",
         "less": "^3.12.2",
         "less-loader": "^6.2.0",
+        "lint-staged": "^10.5.0",
         "prettier": "^2.0.5",
         "react-app-rewired": "^2.1.6",
         "ts-jest": "^26.3.0",
         "typescript": "~3.9.7"
     },
     "scripts": {
-        "start": "node -v"
+        "prestart": "node scripts/generate-version.js",
+        "start": "cross-env NODE_OPTIONS=--max-old-space-size=8192 react-app-rewired start",
+        "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 CI=true node scripts/generate-version.js && react-app-rewired build",
+        "test": "node scripts/generate-version.js && react-app-rewired test --env=jest-environment-jsdom-sixteen",
+        "test-coverage": "node scripts/generate-version.js && react-app-rewired test --env=jest-environment-jsdom-sixteen --watchAll=false --coverage",
+        "storybook": "node scripts/generate-version.js && start-storybook -p 9009 -s public",
+        "build-storybook": "cross-env NODE_OPTIONS=--max-old-space-size=8192 node scripts/generate-version.js && build-storybook -s public",
+        "chromatic": "node scripts/generate-version.js && cross-env NODE_OPTIONS=--max-old-space-size=8192 chromatic  --project-token=rxb9f2dld2q --exit-zero-on-changes --exit-once-uploaded",
+        "gen-version": "node scripts/generate-version.js",
+        "lint-staged": "lint-staged"
     },
-  "main": "index.js",
-  "author": "Zhang, Lei",
-  "license": "MIT"
+    "lint-staged": {
+        "**/*.tsx": [
+            "prettier --write",
+            "eslint --fix"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint-staged",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "jest": {
+        "globalSetup": "./global-setup.js",
+        "moduleNameMapper": {
+            "^.+\\.(css|sass|scss|less)$": "identity-obj-proxy",
+            "antd/es/(.+)": "antd/lib/$1",
+            "@antv/g6/es": "@antv/g6/lib"
+        },
+        "collectCoverageFrom": [
+            "src/**/*.{tsx,ts}",
+            "!src/**/*.stories.tsx"
+        ],
+        "coverageThreshold": {
+            "global": {
+                "branches": 0,
+                "functions": 0,
+                "lines": 0,
+                "statements": 16
+            }
+        }
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version",
+            "ie 11"
+        ]
+    },
+    "optionalDependencies": {
+        "fsevents": "*"
+    }
 }

@@ -26,9 +26,13 @@ $ add-note --project org/pjt-name --mr 20 "my comments"
 
 
 
-
-
+## How to build this Image
 
 
 ```
+# build thunderz99/gitlab-add-mr-note:for-react
+$ docker-compose build
 
+# push to docker hub
+$ docker-compose push
+```
